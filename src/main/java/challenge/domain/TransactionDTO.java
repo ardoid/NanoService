@@ -1,5 +1,8 @@
 package challenge.domain;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class TransactionDTO {
     private double amount;
     private String type;
